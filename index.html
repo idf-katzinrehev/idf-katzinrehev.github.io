@@ -283,7 +283,7 @@
         id: 'maintenance',
         label: 'תפעול, אחזקה וצמיגים',
         icon: '<svg class="w-8 h-8" viewBox="0 0 32 32" fill="none"><circle cx="13" cy="19" r="9" fill="#334155"/><circle cx="13" cy="19" r="4.5" fill="#CBD5E1"/><circle cx="13" cy="19" r="2" fill="#475569"/><path d="M25.5 5.5a4.5 4.5 0 00-5.8 5.8l-7.9 7.9a2 2 0 102.8 2.8l7.9-7.9a4.5 4.5 0 005.8-5.8l-2.6 2.6-2.8-2.8 2.6-2.6z" fill="#3B82F6" stroke="#1E3A8A" stroke-width="1.2"/></svg>',
-        summary: 'תפעול ואחזקה, קומפיוטסט, צמיגים וקוגול',
+        summary: 'הזמנת תור למוסך, מוקד אחזקה, קומפיוטסט, צמיגים וקוגול',
         badgeClass: 'bg-emerald-50 text-emerald-800 dark:bg-emerald-950/60 dark:text-emerald-300',
         isHomeCard: true
       },
@@ -435,16 +435,28 @@
         favorite: false
       },
       {
-        id: 'pdf-1',
-        title: 'תפעול ותחזוקת רכב',
+        id: 'maint-booking',
+        title: 'הזמן תור למוסך',
         category: 'maintenance',
         subCategory: 'תפעול ואחזקה',
         network: 'civilian',
-        url: 'https://minelet.my.canva.site/dagr6zfzdke',
+        url: 'https://a3pil.auto3p.com/auto3p/booking',
         phone: '',
-        desc: 'מרכז המידע והקישורים לתפעול שוטף, טיפולים ואחזקת רכב (מוקד אחזקה: שלוחה 1).',
-        tags: 'תפעול, תחזוקה, אחזקה, טיפול, רכב, שלוחה 1',
+        desc: 'הזמנת תור למוסך לטיפולים ותיקונים ישירות במערכת Auto3P.',
+        tags: 'הזמן תור למוסך, הזמנת תור, מוסך, טיפול, אחזקה, auto3p',
         favorite: true
+      },
+      {
+        id: 'maint-keys-multimedia',
+        title: 'הזמנת שירות למפתחות, מנעולים, קודן, שלט ומולטימדיה',
+        category: 'maintenance',
+        subCategory: 'תפעול ואחזקה',
+        network: 'civilian',
+        url: 'https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=UgiCePpVC0WQjUXA2RHna3Ss1FWcjdxJi0gH02QOA9JUNDM0WEYxOFZaWTJBSTNNTzE4R0xQRVJJTyQlQCN0PWcu&origin=QRCode',
+        phone: '',
+        desc: 'טופס הזמנת שירות לתיקון מפתחות ומנעולים, קודן, שלט, מערכת התראת נסיעה לאחור ומולטימדיה.',
+        tags: 'מפתחות, מנעולים, קודן, שלט, נסיעה לאחור, מולטימדיה, תיקון, אחזקה',
+        favorite: false
       },
       {
         id: 'ph-maint-center',
@@ -469,18 +481,6 @@
         desc: 'תיאום וקביעת תור למבחן רישוי שנתי (טסט) מול מוקד קומפיוטסט בהודעת וואטסאפ או בחיוג.',
         tags: 'קומפיוטסט, טסט, טסטים, רישוי שנתי, תיאום תור, וואטסאפ',
         favorite: false
-      },
-      {
-        id: 'pdf-5',
-        title: 'צמיגים - מידע והנחיות',
-        category: 'maintenance',
-        subCategory: 'צמיגים ופנצ׳רים',
-        network: 'civilian',
-        url: 'https://minelet.my.canva.site/dagr6-pv3b4',
-        phone: '',
-        desc: 'מידע, נהלים והנחיות בנושא צמיגים, תקינות והחלפה.',
-        tags: 'צמיגים, פנצ׳ריה, גלגלים, בטיחות',
-        favorite: true
       },
       {
         id: 'ph-kogol',
@@ -568,11 +568,11 @@
       },
       {
         id: 'ad-1',
-        title: 'כרטיס עבודה דיגיטלי',
+        title: 'כרטיס עבודה דיגיטלי (SmartBase)',
         category: 'minhal',
         subCategory: 'מערכות וכלים',
         network: 'military',
-        url: 'https://mynet.digital.idf.il/worlds/65f6fddda2cee5a351b48c58?filter1=6613f10481810fa9414616c3',
+        url: 'https://smartbase.digital.idf.il/#/',
         phone: '',
         desc: 'פתיחת כרטיס עבודה דיגיטלי ואישור יציאת רכב למשימה במערכת מנהל הנהיגה.',
         tags: 'כרטיס עבודה, כרטיס משימה, אישור יציאה, נסיעה, מנהל הנהיגה',
@@ -856,7 +856,7 @@
       }
     ];
 
-    const STORAGE_KEY = 'idf_vehicle_officer_links_v25';
+    const STORAGE_KEY = 'idf_vehicle_officer_links_v29';
     const THEME_KEY = 'idf_vehicle_portal_theme';
 
     let state = {
